@@ -1,0 +1,30 @@
+/* 将标签页容器改为垂直布局 */
+.md-typeset .tabbed-set {
+    flex-direction: column;
+}
+
+/* 调整标签页标签为垂直排列 */
+.md-typeset .tabbed-labels {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+/* 调整标签页内容位置 */
+.md-typeset .tabbed-content {
+    margin-top: 0;
+    margin-left: 1.5rem;
+}
+
+/* 调整单个标签样式 */
+.md-typeset .tabbed-labels > label {
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+/* 激活标签样式 */
+.md-typeset .tabbed-labels > label[aria-selected="true"] {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+}

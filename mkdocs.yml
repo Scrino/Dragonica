@@ -1,0 +1,93 @@
+site_name: 梦幻龙族攻略（初版）
+site_url: https://example.com
+site_description: 梦幻龙族攻略（初版）是一个关于梦幻龙族游戏的攻略网站，提供全面的游戏指南、技巧和资源。
+site_author: 猫猫头
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
+  icon:
+    logo: material/cat
+
+  features:
+      - navigation.tabs
+      - navigation.top
+      - navigation.indexes # 启用自动索引
+      - content.code.annotate
+      #- navigation.sections
+      # - toc.integrate
+
+
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
+
+  language: zh
+
+  plugins:
+  - search
+  - markdown-attrs  # 支持图片属性
+  - glightbox # 支持图片灯箱效果
+# 静态文件目录（图片、CSS等）
+extra:
+  static_dir: static
+  extra_css:
+    - css/custom.css  # 自定义CSS文件
+  extra_javascript:
+    - js/custom.js  # 自定义JavaScript文件
+  extra:
+    logo: material/cat  # 网站logo
+    favicon: material/cat  # 网站favicon
+
+# media:
+#   base_path: images  # 图片存放的基础路径
+#   # 图片存放的子目录
+#   directories:  
+#     - name: images      
+
+nav:
+  - 首页: index.md
+  - 任务系统:
+    - 任务总览: 任务系统/index.md
+    - 阿鲁曼任务: 任务系统/地平线任务/index.md
+    - 每日任务: 任务系统/每日任务/index.md
+    - 沙漠任务: 任务系统/沙漠任务/index.md
+    - 转职任务: 任务系统/转职任务/index.md
+    - 达科西亚任务: 任务系统/达科西亚任务/index.md
+    - 重复任务: 任务系统/重复任务/index.md
+    - 地平线任务:
+      - 总览: 任务系统/阿鲁曼任务/index.md
+      - 30级任务: 任务系统/地平线任务/伊索里斯英雄任务-30级.md
+      - 40级任务: 任务系统/阿鲁曼任务/40级任务/index.md
+      - 50级任务: 任务系统/阿鲁曼任务/50级任务/index.md
+      - 60级任务: 任务系统/阿鲁曼任务/60级任务/index.md
+      - 70级任务: 任务系统/阿鲁曼任务/70级任务/index.md
+      - 90级任务: 任务系统/阿鲁曼任务/90级任务/index.md
+  - 游戏指南:
+    - 指南总览: 游戏指南/index.md
+    - 技能加点:
+      - 加点总览: 游戏指南/技能加点/index.md
+      - 剑士: 游戏指南/技能加点/剑士.md
+      - 双子: 游戏指南/技能加点/双子.md
+      - 召唤: 游戏指南/技能加点/召唤.md
+      - 巫师: 游戏指南/技能加点/巫师.md
+      - 忍者: 游戏指南/技能加点/忍者.md
+      - 斗士: 游戏指南/技能加点/斗士.md
+      - 游侠: 游戏指南/技能加点/游侠.md
+      - 猎人: 游戏指南/技能加点/猎人.md
+      - 祭祀: 游戏指南/技能加点/祭祀.md
+      - 舞者: 游戏指南/技能加点/舞者.md
+      - 骑士: 游戏指南/技能加点/骑士.md
+    - 新人指南:
+      - 新人总览: 游戏指南/新人指南/index.md
+      - 农场攻略: 游戏指南/新人指南/农场攻略.md
+      - 升级攻略: 游戏指南/新人指南/升级攻略.md
+      - 宠物指南: 游戏指南/新人指南/宠物.md
+      - 游戏下载: 游戏指南/新人指南/游戏下载.md
+      - 满级装备: 游戏指南/新人指南/满级装备.md
+      - 职业推荐: 游戏指南/新人指南/职业推荐.md
+      - 账号注册: 游戏指南/新人指南/账号注册.md
