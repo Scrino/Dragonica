@@ -1,0 +1,61 @@
+nav:
+  - Home: index.md
+  - 游戏指南:
+      - 新手入门: guides/新手入门.md
+      - 职业推荐: guides/职业推荐.md
+      - 技能加点: guides/技能加点/
+      - 毕业装备: guides/神圣装备/
+
+  - 任务攻略:
+      - 沙漠任务: guides
+      - 阿鲁曼任务: guides/任务系统/阿鲁曼任务／
+      - 地平线任务: guides/任务系统/地平线任务／
+      - 达科西亚任务: guides/任务系统/达科西亚任务／
+      - 日常任务: guides/任务系统/日常任务／
+      - 重复任务: guides/任务系统/重复任务／
+
+  - 地图与探索:
+      - 世界地图: guides/maps/world.md
+      - 地图资源: guides/maps/resources.md
+
+  - 社区与交流:
+      - 官方论坛: guides/community/forum.md
+      - 社交媒体: guides/community/social.md
+      - 玩家交流: guides/community/player.md
+
+  - 常见问题:
+      - FAQ: guides/faq.md
+      - 技术支持: guides/support.md
+      - 联系我们: guides/contact.md
+
+markdown_extensions:
+  - toc:  
+      permalink: true
+  - admonition
+  - codehilite:
+      guess_lang: false     
+
+
+
+docs/
+├─任务系统
+│  ├─地平线任务
+│  ├─每日任务
+│  ├─沙漠任务
+│  ├─达科西亚任务
+│  ├─重复任务
+│  └─阿鲁曼任务
+└─游戏指南
+    ├─技能加点
+    └─新人指南
+
+docs/
+├── index.md
+├── 游戏指南/
+│   ├── 新手入门.md
+│   ├── 职业推荐.md
+└── 任务攻略/
+    ├── 任务系统
+        ├── index.md
+        ├── 阿鲁曼任务.md   
+        ├── 沙漠任务.md  

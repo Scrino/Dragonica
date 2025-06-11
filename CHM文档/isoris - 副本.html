@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30级神圣任务</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background: #78af4c;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav {
+            background: #333;
+            padding: 0.5rem;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        p{  
+            color: #cf0d0d; 
+            font-size: 30px;
+            line-height: 1.6;
+            font-family: Arial, sans-serif;
+        }
+        /* footer {
+            background: #333;
+            color: white;
+            text-align: right;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 20%;
+        } */
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .large-image {
+            width: 800px;
+        }
+
+    </style>
+    <!-- 添加目录索引 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const toc = document.getElementById('toc');
+          const headings = document.querySelectorAll('h2, h3');
+          let html = '<h2>目录</h2><ul>';
+          let currentH2 = null;
+          
+          headings.forEach(heading => {
+            // 生成ID（如果元素没有ID）
+            if (!heading.id) {
+              heading.id = heading.textContent
+                .toLowerCase()
+            <img src="../images/isoris/Isoris-30/page2_img6.png" class="large-image">
+                .replace(/\s+/g, '-');
+            }
+            
+            if (heading.tagName === 'H2') {
+              // 关闭上一个H2的子列表
+              if (currentH2) html += '</ul></li>';
+              currentH2 = heading;
+              html += `<li><a href="#${heading.id}">${heading.textContent}</a><ul>`;
+            } else if (heading.tagName === 'H3' && currentH2) {
+              html += `<li><a href="#${heading.id}">${heading.textContent}</a></li>`;
+            }
+          });
+          
+          // 关闭最后一个H2的子列表
+          if (currentH2) html += '</ul></li>';
+          html += '</ul>';
+          
+          toc.innerHTML = html;
+        });
+    </script> 
+</head>
+<body>
+    <header>
+        <h1>伊索里斯英雄任务</h1>
+    </header>    
+    <!-- 索引容器 -->
+    <nav id="toc" aria-label="文档目录"></nav>
+    <!-- 沙漠任务介绍 -->
+     <section>
+    <!-- 主要内容 -->
+    <main>
+        <h2 id="沙漠任务说明">沙漠任务说明</h2>
+          <div>
+            <img src="../images/isoris/Isoris-30/page2_img6.png" style="width: 800px;">
+            <img src="../images/isoris/Isoris-30/page2_img7.png" style="width: 800px;">
+            <img src="../images/isoris/Isoris-30/page2_img8.png" style="width: 800px;">
+          </div>
+     </section>>
+
+     <!--30级沙漠任务 -->
+     <section>
+        <!-- 主要内容 -->
+        <main>
+            <h2 id="伊索里斯英雄任务-30级">伊索里斯英雄任务-30级 （ps:大部分对话任务可以远程完成 后续不再说明）</h2>
+              <h3 id="伊索里斯-风暴(1)">伊索里斯-风暴(1)</h3>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page3_img14.png" style="width: 800px;" alt="伊索里斯-风暴(1)-1">
+                <img src="../images/isoris/Isoris-30/page3_img13.png" style="width: 800px;" alt="伊索里斯-风暴(1)-2">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page3_img16.png" style="width: 800px;" alt="伊索里斯-风暴(1)-3">
+                <img src="../images/isoris/Isoris-30/page3_img15.png" style="width: 800px;" alt="伊索里斯-风暴(1)-4">
+              </div>
+              <h3 id="伊索里斯-风暴(2)">伊索里斯-风暴(2)</h3>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page3_img3.png" style="width: 800px;" alt="伊索里斯-风暴(2)-1">
+                <img src="../images/isoris/Isoris-30/page3_img17.png" style="width: 800px;" alt="伊索里斯-风暴(2)-2">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page3_img4.png" style="width: 800px;" alt="伊索里斯-风暴(2)-3">
+                <img src="../images/isoris/Isoris-30/page4_img5.png" style="width: 800px;" alt="伊索里斯-风暴(2)-4">
+              </div>
+              <h3 id="伊索里斯·达西亚法师的地图">伊索里斯·达西亚法师的地图</h3>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page4_img10.png" style="width: 800px;" alt="伊索里斯·达西亚法师的地图-1">
+                <img src="../images/isoris/Isoris-30/page4_img9.png" style="width: 800px;" alt="伊索里斯·达西亚法师的地图-2">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page4_img11.png" style="width: 800px;" alt="伊索里斯·达西亚法师的地图-3">
+                <img src="../images/isoris/Isoris-30/page4_img13.png" style="width: 800px;" alt="伊索里斯·达西亚法师的地图-4">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page4_img12.png" style="width: 800px;" alt="伊索里斯·达西亚法师的地图-5">
+              </div>
+              <h3 id="伊索里斯·一个志愿者？">伊索里斯·一个志愿者？</h3>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page4_img4.png" style="width: 800px;" alt="伊索里斯·一个志愿者？-1">
+                <img src="../images/isoris/Isoris-30/page4_img3.png" style="width: 800px;" alt="伊索里斯·一个志愿者？-2">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page5_img1.png" style="width: 800px;" alt="伊索里斯·一个志愿者？-3">
+                <img src="../images/isoris/Isoris-30/page5_img14.png" style="width: 800px;" alt="伊索里斯·一个志愿者？-4">
+              </div>
+              <h3 id="">伊索里斯·一艘船？</h3>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page5_img3.png" style="width: 800px;" alt="伊索里斯·一艘船？-1">
+                <img src="../images/isoris/Isoris-30/page5_img17.png" style="width: 800px;" alt="伊索里斯·一艘船？-2">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page5_img5.png" style="width: 800px;" alt="伊索里斯·一艘船？-3">
+                <img src="../images/isoris/Isoris-30/page5_img4.png" style="width: 800px;" alt="伊索里斯·一艘船？-4">
+              </div>
+              <h3>伊索里斯·让我们去伊索里斯！</h3>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page5_img9.png" style="width: 800px;" alt="伊索里斯·让我们去伊索里斯！-1">
+                <img src="../images/isoris/Isoris-30/page5_img5.png" style="width: 800px;" alt="伊索里斯·让我们去伊索里斯！-2">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page6_img16.png" style="width: 800px;" alt="伊索里斯·让我们去伊索里斯！-3">
+                <img src="../images/isoris/Isoris-30/page6_img4.png" style="width: 800px;" alt="伊索里斯·让我们去伊索里斯！-4">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page7_img8.png" style="width: 800px;" alt="伊索里斯·让我们去伊索里斯！-5">
+                <img src="../images/isoris/Isoris-30/page7_img7.png" style="width: 800px;" alt="伊索里斯·让我们去伊索里斯！-6">
+              </div>
+              <h3>伊索里斯·证明自己</h3>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page7_img4.png" style="width: 800px;" alt="伊索里斯·证明自己-1">
+                <img src="../images/isoris/Isoris-30/page7_img12.png" style="width: 800px;" alt="伊索里斯·证明自己-2">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page7_img5.png" style="width: 800px;" alt="伊索里斯·证明自己-3">
+                <img src="../images/isoris/Isoris-30/page8_img6.png" style="width: 800px;" alt="伊索里斯·证明自己-4">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page8_img8.png" style="width: 800px;" alt="伊索里斯·证明自己-5">
+              </div>
+              <h3>伊索里斯-信任的证明：训练</h3>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page8_img1.png" style="width: 800px;" alt="伊索里斯-信任的证明：训练-1">
+                <img src="../images/isoris/Isoris-30/page8_img13.png" style="width: 800px;" alt="伊索里斯-信任的证明：训练-2">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page8_img4.png" style="width: 800px;" alt="伊索里斯-信任的证明：训练-3">
+              </div>
+              <h3>伊索里斯-信任的证明：耐心（ps：直升号可以组小号完成）</h3>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page8_img14.png" style="width: 800px;" alt="伊索里斯-信任的证明：耐心-1">
+                <img src="../images/isoris/Isoris-30/page8_img6.png" style="width: 800px;" alt="伊索里斯-信任的证明：耐心-2">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page8_img5.png" style="width: 800px;" alt="伊索里斯-信任的证明：耐心-3">
+              </div>
+              <h3>伊索里斯-饮用水，圣杯（1）</h3>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page9_img13.png" style="width: 800px;" alt="伊索里斯-饮用水，圣杯（1）-1">
+                <img src="../images/isoris/Isoris-30/page9_img14.png" style="width: 800px;" alt="伊索里斯-饮用水，圣杯（1）-2">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page9_img12.png" style="width: 800px;" alt="伊索里斯-饮用水，圣杯（1）-3">
+              </div>
+              <h3>伊索里斯-饮用水，圣杯（2）</h3>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page9_img16.png" style="width: 800px;" alt="伊索里斯-饮用水，圣杯（2）-1">
+                <img src="../images/isoris/Isoris-30/page9_img3.png" style="width: 800px;" alt="伊索里斯-饮用水，圣杯（2）-2">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page9_img15.png" style="width: 800px;" alt="伊索里斯-饮用水，圣杯（2）-3">
+              </div>
+              <h3>伊索里斯-饮用水，圣杯（3）</h3>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page9_img5.png" style="width: 800px;" alt="伊索里斯-饮用水，圣杯（3）-1">
+                <img src="../images/isoris/Isoris-30/page9_img6.png" style="width: 800px;" alt="伊索里斯-饮用水，圣杯（3）-2">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page9_img4.png" style="width: 800px;" alt="伊索里斯-饮用水，圣杯（3）-3">
+              </div>
+              <h3>伊索里斯-阿尔巴沙（ps：进城后去地图最上传送到国王）</h3>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page9_img8.png" style="width: 800px;" alt="伊索里斯-阿尔巴沙-1">
+                <img src="../images/isoris/Isoris-30/page9_img7.png" style="width: 800px;" alt="伊索里斯-阿尔巴沙-2">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page10_img1.png" style="width: 800px;" alt="伊索里斯-阿尔巴沙-3">
+                <img src="../images/isoris/Isoris-30/page10_img3.png" style="width: 800px;" alt="伊索里斯-阿尔巴沙-4">
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: right;">
+                <img src="../images/isoris/Isoris-30/page10_img10.png" style="width: 800px;" alt="伊索里斯-阿尔巴沙-5">
+                <img src="../images/isoris/Isoris-30/page10_img9.png" style="width: 800px;" alt="伊索里斯-阿尔巴沙-5">
+              </div>
+         </section>>
+    
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 202506 梦幻龙族攻略</p>
+        <nav>
+        </nav> 
+    </footer>
+</body>
+</html>
